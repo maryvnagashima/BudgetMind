@@ -1,6 +1,6 @@
 # 💰 BudgetMind – SaaS de Otimização de Budget de Mídia
 
-O **BudgetMind** é uma plataforma SaaS que consolida dados de mídia paga de múltiplos canais e usa IA para sugerir a melhor redistribuição de investimento, ajudando times de marketing a aumentarem ROAS e reduzirem o tempo gasto em planilhas. [peliqan](https://peliqan.io/blog/etl-best-practices/)
+O **BudgetMind** é uma plataforma SaaS que consolida dados de mídia paga de múltiplos canais e usa IA para sugerir a melhor redistribuição de investimento, ajudando times de marketing a aumentarem ROAS e reduzirem o tempo gasto em planilhas. 
 
 ***
 
@@ -8,8 +8,8 @@ O **BudgetMind** é uma plataforma SaaS que consolida dados de mídia paga de m�
 
 Times de performance e agências enfrentam três dores recorrentes:
 
-- Gastam 1–3 horas por dia exportando relatórios de Google Ads, Meta, Shopee etc. e consolidando tudo em Excel. [peliqan](https://peliqan.io/blog/etl-best-practices/)
-- Tomam decisões de budget de forma reativa e intuitiva, sem visão clara de qual canal ou região realmente entrega mais resultado. [scaler](https://www.scaler.com/blog/20-best-data-analyst-projects/)
+- Gastam 1–3 horas por dia exportando relatórios de Google Ads, Meta, Shopee etc. e consolidando tudo em Excel. 
+- Tomam decisões de budget de forma reativa e intuitiva, sem visão clara de qual canal ou região realmente entrega mais resultado. 
 - Têm dificuldade de enxergar saturação geográfica e por canal, desperdiçando verba em campanhas que já bateram teto de escala.
 
 O resultado é um mix de mídia ineficiente, tempo desperdiçado e oportunidades de otimização que passam despercebidas.
@@ -20,10 +20,10 @@ O resultado é um mix de mídia ineficiente, tempo desperdiçado e oportunidades
 
 O **BudgetMind** foi criado para ser o **copiloto de mídia paga**:
 
-- Consolida dados de 5+ plataformas de mídia em um único painel. [refontelearning](https://www.refontelearning.com/blog/data-engineering-in-2026-trends-tools-and-how-to-thrive)
+- Consolida dados de 5+ plataformas de mídia em um único painel. 
 - Normaliza métricas (ROAS, CPA, CAC, LTV) para comparação justa entre canais.  
 - Analisa performance por canal, campanha, criativo e geografia.  
-- Usa IA (Gemini) para sugerir redistribuições de budget com base em regras de negócio e histórico. [refontelearning](https://www.refontelearning.com/blog/data-engineering-in-2026-trends-tools-and-how-to-thrive)
+- Usa IA (Gemini) para sugerir redistribuições de budget com base em regras de negócio e histórico. 
 - Oferece uma central de alertas inteligentes para identificar problemas e oportunidades rapidamente.
 
 ***
@@ -37,18 +37,17 @@ O **BudgetMind** foi criado para ser o **copiloto de mídia paga**:
   - Meta Ads  
   - Shopee Ads  
   - (Opcional) TikTok Ads  
-  - Google Analytics 4 [peliqan](https://peliqan.io/blog/etl-best-practices/)
+  - Google Analytics 4 
 - Ingestão periódica dos dados (jobs agendados / funções em nuvem).  
 - Cria uma camada de dados unificada com métricas padronizadas:  
-  - impressões, cliques, custo, conversões, receita, ROAS, CPA, CTR, CVR. [tapdata](https://tapdata.io/articles/mastering-etl-with-sql-server-best-practices-and-tips/)
-
+  - impressões, cliques, custo, conversões, receita, ROAS, CPA, CTR, CVR.
 ### 2. Análise geográfica (País → Estado → Cidade)
 
 - Mapa interativo mostrando performance por região.  
 - Drill-down de Brasil → Estado → Cidade.  
 - Identificação de:  
   - regiões saturadas (CPA alto, ROAS caindo),  
-  - regiões subexploradas com bom potencial (CPA baixo, ROAS alto). [scaler](https://www.scaler.com/blog/20-best-data-analyst-projects/)
+  - regiões subexploradas com bom potencial (CPA baixo, ROAS alto). 
 - Sugestões do tipo:  
   - “Reduzir 20% do investimento em SP e realocar para MG, onde o CPA é 35% menor.”
 
@@ -77,7 +76,7 @@ O BudgetMind usa **Gemini** para analisar:
 - histórico de performance,  
 - limites de budget,  
 - metas de ROAS e CPA,  
-- restrições de negócio (mínimo/máximo por canal). [refontelearning](https://www.refontelearning.com/blog/data-engineering-in-2026-trends-tools-and-how-to-thrive)
+- restrições de negócio (mínimo/máximo por canal). 
 
 Gera sugestões do tipo:
 
@@ -95,7 +94,7 @@ Funcionalidade planejada:
 - Exibir impacto esperado em:  
   - ROAS consolidado,  
   - receita total,  
-  - distribuição de CPA por canal. [scaler](https://www.scaler.com/blog/20-best-data-analyst-projects/)
+  - distribuição de CPA por canal. 
 
 ***
 
@@ -117,7 +116,7 @@ Frontend React (BudgetMind UI)
 Gemini (recomendações de budget)
 ```
 
-Essa arquitetura segue boas práticas de projetos de dados modernos: ingestão automatizada, modelagem analítica em DW e camada de visualização orientada ao negócio. [github](https://github.com/itsyashk1406/sql-portfolio-data-warehouse)
+Essa arquitetura segue boas práticas de projetos de dados modernos: ingestão automatizada, modelagem analítica em DW e camada de visualização orientada ao negócio. [github]
 
 ***
 
@@ -127,12 +126,12 @@ Essa arquitetura segue boas práticas de projetos de dados modernos: ingestão a
 
 - Scripts / funções leem dados de:  
   - plataformas de mídia (ou datasets simulados em `data_sample/` na versão open source),  
-  - analytics (sessões, conversões). [peliqan](https://peliqan.io/blog/etl-best-practices/)
-- Tratamento básico de erros (retry, logs) e registro de execuções. [reddit](https://www.reddit.com/r/ETL/comments/1oiouqb/how_do_you_handle_your_etl_and_reporting_data/)
+  - analytics (sessões, conversões). 
+- Tratamento básico de erros (retry, logs) e registro de execuções.
 
 ### Transformação e modelagem
 
-- Modelo dimensional no DW com foco em marketing de performance: [github](https://github.com/itsyashk1406/sql-portfolio-data-warehouse)
+- Modelo dimensional no DW com foco em marketing de performance: 
   - `fact_campaign_performance` (impressões, cliques, custo, conversões, receita, ROAS, CPA).  
   - `dim_channel` (Google, Meta, Shopee etc.).  
   - `dim_geo` (país, estado, cidade).  
@@ -140,11 +139,10 @@ Essa arquitetura segue boas práticas de projetos de dados modernos: ingestão a
 - Scripts SQL organizados em camadas (exemplo):  
   - `bronze/` – staging de dados brutos.  
   - `silver/` – dados limpos e normalizados.  
-  - `gold/` – tabelas analíticas consumidas pelo front. [github](https://github.com/itsyashk1406/sql-portfolio-data-warehouse)
-
+  - `gold/` – tabelas analíticas consumidas pelo front. 
 ### Carga & consumo
 
-- Tabelas atualizadas em janelas diárias/horárias, conforme a fonte. [reddit](https://www.reddit.com/r/ETL/comments/1oiouqb/how_do_you_handle_your_etl_and_reporting_data/)
+- Tabelas atualizadas em janelas diárias/horárias, conforme a fonte. 
 - A camada de API expõe endpoints como:  
   - `/api/kpis`, `/api/regions`, `/api/alerts`, `/api/recommendations`.  
 - O frontend consome esses endpoints e monta páginas como `Dashboard`, `RegionalAnalysis`, `SaturationAnalysis`, `AlertsCenter`, `ProductAnalytics`.
@@ -154,9 +152,9 @@ Essa arquitetura segue boas práticas de projetos de dados modernos: ingestão a
 ## 🧱 Stack técnica
 
 - **Backend / Dados**  
-  - Cloud Functions / scripts Python para ETL e integração com APIs de mídia. [refontelearning](https://www.refontelearning.com/blog/data-engineering-in-2026-trends-tools-and-how-to-thrive)
+  - Cloud Functions / scripts Python para ETL e integração com APIs de mídia. 
   - BigQuery como data warehouse principal.  
-  - SQL organizado por camadas (bronze/silver/gold). [github](https://github.com/itsyashk1406/sql-portfolio-data-warehouse)
+  - SQL organizado por camadas (bronze/silver/gold). 
 
 - **Frontend**  
   - React + TypeScript:  
@@ -172,8 +170,8 @@ Essa arquitetura segue boas práticas de projetos de dados modernos: ingestão a
 
 O BudgetMind foi desenhado para suportar hipóteses de impacto como:
 
-- Reduzir em **X%** o tempo gasto semanalmente em consolidação manual de relatórios. [peliqan](https://peliqan.io/blog/etl-best-practices/)
-- Aumentar o ROAS consolidado ao realocar budget de canais/regiões saturados para oportunidades. [scaler](https://www.scaler.com/blog/20-best-data-analyst-projects/)
+- Reduzir em **X%** o tempo gasto semanalmente em consolidação manual de relatórios. 
+- Aumentar o ROAS consolidado ao realocar budget de canais/regiões saturados para oportunidades. 
 - Ajudar gestores a identificar rapidamente campanhas com potencial de escala ou necessidade de corte.
 
 Na documentação técnica (`docs/data_model.md`), são detalhados exemplos de KPIs e queries usados para alimentar o dashboard.
@@ -228,11 +226,11 @@ Acesse o endereço indicado (por exemplo `http://localhost:5173`) para ver o Bud
 ## ✅ Qualidade, testes e boas práticas
 
 - **ETL**  
-  - Checagens básicas de schema e tipos de dados antes de carregar no DW. [github](https://github.com/itsyashk1406/sql-portfolio-data-warehouse)
+  - Checagens básicas de schema e tipos de dados antes de carregar no DW. 
   - Logs de execução e falhas em jobs agendados.
 
 - **Código**  
-  - Estrutura de pastas organizada por responsabilidade (ETL, SQL, API, UI). [github](https://github.com/data-engineering-community/data-engineering-project-template/blob/main/README.md)
+  - Estrutura de pastas organizada por responsabilidade (ETL, SQL, API, UI). 
   - Versionamento com Git e instruções claras de setup.
 
 - **Limitações conhecidas**  
